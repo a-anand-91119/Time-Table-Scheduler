@@ -1,0 +1,171 @@
+{
+	"noOfHoursPerDay": "8",
+	"noOfDaysPerWeek": "5",
+	"classes": [
+		{
+			"name": "1A",
+			"subjects": [
+				{
+					"subjectName": "SUB_1",
+					"noOfHours": "5"
+				},
+				{
+					"subjectName": "SUB_2",
+					"noOfHours": "5"
+				},
+				{
+					"subjectName": "SUB_3",
+					"noOfHours": "4"
+				},
+				{
+					"subjectName": "SUB_4",
+					"noOfHours": "4"
+				},
+				{
+					"subjectName": "SUB_5",
+					"noOfHours": "5"
+				},
+				{
+					"subjectName": "SUB_6",
+					"noOfHours": "5"
+				},
+				{
+					"subjectName": "SUB_7",
+					"noOfHours": "7"
+				},
+				{
+					"subjectName": "SUB_8",
+					"noOfHours": "5"
+				}
+			]
+		},
+		{
+			"name": "1B",
+			"subjects": [
+				{
+					"subjectName": "SUB_1",
+					"noOfHours": "3"
+				},
+				{
+					"subjectName": "SUB_2",
+					"noOfHours": "6"
+				},
+				{
+					"subjectName": "SUB_3",
+					"noOfHours": "4"
+				},
+				{
+					"subjectName": "SUB_4",
+					"noOfHours": "4"
+				},
+				{
+					"subjectName": "SUB_5",
+					"noOfHours": "5"
+				},
+				{
+					"subjectName": "SUB_6",
+					"noOfHours": "6"
+				},
+				{
+					"subjectName": "SUB_7",
+					"noOfHours": "7"
+				},
+				{
+					"subjectName": "SUB_8",
+					"noOfHours": "5"
+				}
+			]
+		},
+		{
+			"name": "1C",
+			"subjects": [
+				{
+					"subjectName": "SUB_1",
+					"noOfHours": "6"
+				},
+				{
+					"subjectName": "SUB_2",
+					"noOfHours": "6"
+				},
+				{
+					"subjectName": "SUB_3",
+					"noOfHours": "4"
+				},
+				{
+					"subjectName": "SUB_4",
+					"noOfHours": "4"
+				},
+				{
+					"subjectName": "SUB_5",
+					"noOfHours": "5"
+				},
+				{
+					"subjectName": "SUB_6",
+					"noOfHours": "5"
+				},
+				{
+					"subjectName": "SUB_7",
+					"noOfHours": "6"
+				},
+				{
+					"subjectName": "SUB_8",
+					"noOfHours": "4"
+				}
+			]
+		}
+	],
+	"teachers": [
+		{
+			"name": "teacher_1",
+			"subjects": [
+				"SUB_1",
+				"SUB_2"
+			]
+		},
+		{
+			"name": "teacher_2",
+			"subjects": [
+				"SUB_2"
+			]
+		},
+		{
+			"name": "teacher_3",
+			"subjects": [
+				"SUB_3"
+			]
+		},
+		{
+			"name": "teacher_4",
+			"subjects": [
+				"SUB_4",
+				"SUB_1"
+			]
+		},
+		{
+			"name": "teacher_5",
+			"subjects": [
+				"SUB_5"
+			]
+		},
+		{
+			"name": "teacher_6",
+			"subjects": [
+				"SUB_5",
+				"SUB_7"
+			]
+		},
+		{
+			"name": "teacher_7",
+			"subjects": [
+				"SUB_7",
+				"SUB_8"
+			]
+		},
+		{
+			"name": "teacher_8",
+			"subjects": [
+				"SUB_8"
+			]
+		}
+	]
+}
