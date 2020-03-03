@@ -5,13 +5,13 @@ import java.util.List;
 public class Classes {
 
 	private String name;
-	private List<Subject> subjects;
+	private List<AssignedSubject> subjects;
 
 	public Classes() {
 		super();
 	}
 
-	public Classes(String name, List<Subject> subjects) {
+	public Classes(String name, List<AssignedSubject> subjects) {
 		super();
 		this.name = name;
 		this.subjects = subjects;
@@ -25,11 +25,11 @@ public class Classes {
 		this.name = name;
 	}
 
-	public List<Subject> getSubjects() {
+	public List<AssignedSubject> getSubjects() {
 		return subjects;
 	}
 
-	public void setSubjects(List<Subject> subjects) {
+	public void setSubjects(List<AssignedSubject> subjects) {
 		this.subjects = subjects;
 	}
 

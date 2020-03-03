@@ -2,40 +2,54 @@ package com.anand.scheduler.raw;
 
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonSetter;
+
 public class Teacher {
 
-	String name;
-	List<String> subjects;
+	private String teacherId;
+	private String teacherName;
+	private List<String> subjectIds;
 
 	public Teacher() {
 		super();
 	}
 
-	public Teacher(String name, List<String> subjects) {
+	public Teacher(String teacherId, String teacherName, List<String> subjectIds) {
 		super();
-		this.name = name;
-		this.subjects = subjects;
+		this.teacherId = teacherId;
+		this.teacherName = teacherName;
+		this.subjectIds = subjectIds;
 	}
 
-	public String getName() {
-		return name;
+	public String getTeacherId() {
+		return teacherId;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	public void setTeacherId(String teacherId) {
+		this.teacherId = teacherId;
 	}
 
-	public List<String> getSubjects() {
-		return subjects;
+	public String getTeacherName() {
+		return teacherName;
 	}
 
-	public void setSubjects(List<String> subjects) {
-		this.subjects = subjects;
+	public void setTeacherName(String teacherName) {
+		this.teacherName = teacherName;
+	}
+
+	public List<String> getSubjectIds() {
+		return subjectIds;
+	}
+	
+	@JsonSetter("subjects")
+	public void setSubjectIds(List<String> subjectIds) {
+		this.subjectIds = subjectIds;
 	}
 
 	@Override
 	public String toString() {
-		return "Teacher [name=" + name + ", subjects=" + subjects + "]";
+		return "Teacher [teacherId=" + teacherId + ", teacherName="
+				+ teacherName + ", subjectIds=" + subjectIds + "]";
 	}
 
 }

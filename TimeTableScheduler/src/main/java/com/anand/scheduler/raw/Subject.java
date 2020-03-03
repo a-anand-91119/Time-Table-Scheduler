@@ -1,17 +1,25 @@
 package com.anand.scheduler.raw;
 
 public class Subject {
+	private String subjectId;
 	private String subjectName;
-	private String noOfHours;
 
 	public Subject() {
 		super();
 	}
 
-	public Subject(String subjectName, String noOfHours) {
+	public Subject(String subjectId, String subjectName) {
 		super();
+		this.subjectId = subjectId;
 		this.subjectName = subjectName;
-		this.noOfHours = noOfHours;
+	}
+
+	public String getSubjectId() {
+		return subjectId;
+	}
+
+	public void setSubjectId(String subjectId) {
+		this.subjectId = subjectId;
 	}
 
 	public String getSubjectName() {
@@ -22,17 +30,10 @@ public class Subject {
 		this.subjectName = subjectName;
 	}
 
-	public String getNoOfHours() {
-		return noOfHours;
-	}
-
-	public void setNoOfHours(String noOfHours) {
-		this.noOfHours = noOfHours;
-	}
-
 	@Override
 	public String toString() {
-		return "Subject [subjectName=" + subjectName + ", noOfHours=" + noOfHours + "]";
+		return "Subject [subjectId=" + subjectId + ", subjectName="
+				+ subjectName + "]";
 	}
 
 }
