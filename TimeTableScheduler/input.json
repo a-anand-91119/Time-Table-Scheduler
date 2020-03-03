@@ -61,6 +61,13 @@
       "subjects": [
         "8"
       ]
+    },
+    {
+      "teacherId": "9",
+      "teacherName": "teacher_9",
+      "subjects": [
+        "6"
+      ]
     }
   ],
   "subjects": [

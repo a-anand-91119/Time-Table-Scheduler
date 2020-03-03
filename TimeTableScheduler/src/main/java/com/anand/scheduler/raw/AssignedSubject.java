@@ -4,6 +4,7 @@ public class AssignedSubject {
 
 	private String subjectId;
 	private String noOfHours;
+	private String teacherId;
 
 	public AssignedSubject(String subjectId, String noOfHours) {
 		super();
@@ -13,6 +14,14 @@ public class AssignedSubject {
 
 	public AssignedSubject() {
 		super();
+	}
+
+	public String getTeacherId() {
+		return teacherId;
+	}
+
+	public void setTeacherId(String teacherId) {
+		this.teacherId = teacherId;
 	}
 
 	public String getSubjectId() {
@@ -33,8 +42,8 @@ public class AssignedSubject {
 
 	@Override
 	public String toString() {
-		return "AssignedSubject [subjectId=" + subjectId + ", noOfHours="
-				+ noOfHours + "]";
+		return "AssignedSubject [subjectId=" + subjectId + ", noOfHours=" + noOfHours + ", teacherId=" + teacherId
+				+ "]";
 	}
 
 }

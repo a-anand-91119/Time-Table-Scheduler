@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Random;
 
+import com.anand.scheduler.exceptions.TeacherNotFoundException;
 import com.anand.scheduler.raw.RawJsonData;
 import com.anand.scheduler.reference.domain.ReferenceTable;
 import com.fasterxml.jackson.databind.InjectableValues;
@@ -14,7 +15,6 @@ public class JsonReader {
 	public static void main(String[] args) {
 		readJsonData();
 	}
-
 	
 	public static void readJsonData() {
 		ObjectMapper objectMapper = new ObjectMapper();
@@ -29,10 +29,12 @@ public class JsonReader {
 			timeTable.displayReferenceData();
 		} catch (IOException e) {
 			e.printStackTrace();
+		} catch (TeacherNotFoundException e) {
+			System.err.println("Invalid Data. " + e.getMessage());
 		}
 	}
 
-	private static ReferenceTable prepareReferenceTable(RawJsonData rawJsonData) {
+	private static ReferenceTable prepareReferenceTable(RawJsonData rawJsonData) throws TeacherNotFoundException {
 		ReferenceTable referenceTable = new ReferenceTable().initialize(rawJsonData);
 		
 		return referenceTable;

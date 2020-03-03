@@ -5,20 +5,30 @@ public class TimeSlot {
 	private int timeSlotId;
 	private String classId;
 	private String subjectId;
+	private String teacherId;
 
 	public TimeSlot() {
 		super();
 	}
 
-	public TimeSlot(int timeSlotId, String classId, String subjectId) {
+	public TimeSlot(int timeSlotId, String classId, String subjectId, String teacherId) {
 		super();
 		this.timeSlotId = timeSlotId;
 		this.classId = classId;
 		this.subjectId = subjectId;
+		this.teacherId = teacherId;
 	}
 
 	public TimeSlot(int timeSlotId) {
 		this.timeSlotId = timeSlotId;
+	}
+
+	public String getTeacherId() {
+		return teacherId;
+	}
+
+	public void setTeacherId(String teacherId) {
+		this.teacherId = teacherId;
 	}
 
 	public int getTimeSlotId() {
@@ -47,8 +57,8 @@ public class TimeSlot {
 
 	@Override
 	public String toString() {
-		return "TimeSlot [timeSlotId=" + timeSlotId + ", classId=" + classId
-				+ ", subjectId=" + subjectId + "]";
+		return "TimeSlot [timeSlotId=" + timeSlotId + ", classId=" + classId + ", subjectId=" + subjectId
+				+ ", teacherId=" + teacherId + "]";
 	}
 
 }
