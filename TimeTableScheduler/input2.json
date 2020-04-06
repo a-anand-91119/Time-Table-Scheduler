@@ -1,0 +1,172 @@
+{
+	"noOfHoursPerDay": "8",
+	"noOfDaysPerWeek": "7",
+	"teachers": [
+		{
+			"teacherId": "1",
+			"teacherName": "teacher_1",
+			"subjects": [
+				"1",
+				"3"
+			]
+		},
+		{
+			"teacherId": "2",
+			"teacherName": "teacher_2",
+			"subjects": [
+				"2",
+				"3"
+			]
+		},
+		{
+			"teacherId": "3",
+			"teacherName": "teacher_3",
+			"subjects": [
+				"3",
+				"4"
+			]
+		},
+		{
+			"teacherId": "4",
+			"teacherName": "teacher_4",
+			"subjects": [
+				"1",
+				"5"
+			]
+		},
+		{
+			"teacherId": "5",
+			"teacherName": "teacher_5",
+			"subjects": [
+				"4",
+				"6"
+			]
+		},
+		{
+			"teacherId": "6",
+			"teacherName": "teacher_6",
+			"subjects": [
+				"1",
+				"8"
+			]
+		},
+		{
+			"teacherId": "7",
+			"teacherName": "teacher_7",
+			"subjects": [
+				"8",
+				"7"
+			]
+		}
+	],
+	"subjects": [
+		{
+			"subjectId": "1",
+			"subjectName": "SUB_1"
+		},
+		{
+			"subjectId": "2",
+			"subjectName": "SUB_2"
+		},
+		{
+			"subjectId": "3",
+			"subjectName": "SUB_3"
+		},
+		{
+			"subjectId": "4",
+			"subjectName": "SUB_4"
+		},
+		{
+			"subjectId": "5",
+			"subjectName": "SUB_5"
+		},
+		{
+			"subjectId": "6",
+			"subjectName": "SUB_6"
+		},
+		{
+			"subjectId": "7",
+			"subjectName": "SUB_7"
+		},
+		{
+			"subjectId": "8",
+			"subjectName": "SUB_8"
+		}
+	],
+	"classes": [
+		{
+			"name": "1A",
+			"subjects": [
+				{
+					"subjectId": "1",
+					"noOfHours": "7"
+				},
+				{
+					"subjectId": "2",
+					"noOfHours": "8"
+				},
+				{
+					"subjectId": "3",
+					"noOfHours": "10"
+				},
+				{
+					"subjectId": "4",
+					"noOfHours": "7"
+				},
+				{
+					"subjectId": "5",
+					"noOfHours": "6"
+				},
+				{
+					"subjectId": "6",
+					"noOfHours": "5"
+				},
+				{
+					"subjectId": "7",
+					"noOfHours": "7"
+				},
+				{
+					"subjectId": "8",
+					"noOfHours": "6"
+				}
+			]
+		},
+		{
+			"name": "1B",
+			"subjects": [
+				{
+					"subjectId": "1",
+					"noOfHours": "8"
+				},
+				{
+					"subjectId": "2",
+					"noOfHours": "7"
+				},
+				{
+					"subjectId": "3",
+					"noOfHours": "8"
+				},
+				{
+					"subjectId": "4",
+					"noOfHours": "6"
+				},
+				{
+					"subjectId": "5",
+					"noOfHours": "5"
+				},
+				{
+					"subjectId": "6",
+					"noOfHours": "8"
+				},
+				{
+					"subjectId": "7",
+					"noOfHours": "6"
+				},
+				{
+					"subjectId": "8",
+					"noOfHours": "8"
+				}
+			]
+		}
+	]
+}

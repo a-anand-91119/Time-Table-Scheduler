@@ -6,6 +6,7 @@ public class TimeSlot {
 	private String classId;
 	private String subjectId;
 	private String teacherId;
+	private boolean isFreePeriod;
 
 	public TimeSlot() {
 		super();
@@ -17,10 +18,20 @@ public class TimeSlot {
 		this.classId = classId;
 		this.subjectId = subjectId;
 		this.teacherId = teacherId;
+		this.isFreePeriod = false;
 	}
 
 	public TimeSlot(int timeSlotId) {
 		this.timeSlotId = timeSlotId;
+		this.isFreePeriod = true;
+	}
+
+	public boolean isFreePeriod() {
+		return isFreePeriod;
+	}
+
+	public void setFreePeriod(boolean isFreePeriod) {
+		this.isFreePeriod = isFreePeriod;
 	}
 
 	public String getTeacherId() {
@@ -58,7 +69,7 @@ public class TimeSlot {
 	@Override
 	public String toString() {
 		return "TimeSlot [timeSlotId=" + timeSlotId + ", classId=" + classId + ", subjectId=" + subjectId
-				+ ", teacherId=" + teacherId + "]";
+				+ ", teacherId=" + teacherId + ", isFreePeriod=" + isFreePeriod + "]";
 	}
 
 }
